@@ -1,6 +1,7 @@
 const contentfulConfig = {
   spaceId: "f8kobr3h24us",
   accessToken: "lqSqAPHcEjKzIuhqlkjsm4CPdAVp-ipkS6yX-RoS8T4",
+  downloadLocal:true
 }
 
 module.exports = {
