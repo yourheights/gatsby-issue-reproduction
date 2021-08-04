@@ -1,3 +1,8 @@
+const contentfulConfig = {
+  spaceId: "f8kobr3h24us",
+  accessToken: "lqSqAPHcEjKzIuhqlkjsm4CPdAVp-ipkS6yX-RoS8T4",
+}
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -28,6 +33,10 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: contentfulConfig,
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

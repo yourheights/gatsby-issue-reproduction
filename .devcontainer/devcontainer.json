@@ -1,0 +1,28 @@
+{
+  "name": "Node.js & TypeScript",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": { "VARIANT": "14" }
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "runArgs": ["--shm-size", "1024m"],
+  "extensions": [
+    "mikestead.dotenv",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "christian-kohler.npm-intellisense",
+    "visualstudioexptteam.vscodeintellicode",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "kumar-harsh.graphql-for-vscode",
+    "wix.vscode-import-cost",
+    "ms-vsliveshare.vsliveshare",
+    "gruntfuggly.todo-tree",
+    "eamodio.gitlens"
+  ],
+  "remoteUser": "node",
+  "mounts": [
+    "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+  ]
+}
